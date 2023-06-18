@@ -12,20 +12,43 @@
     <p id="height"></p>
 
     <script>
-        if (name != null) {
-            document.getElementById("nameS").innerHTML = name
+        let name 
+        name = prompt ("Escribe aquí tu nombre")
+        let nameS = "Tu nombre es " + name
+        console.log (nameS)
+
+
+        let age 
+        age = prompt ("Escribe tu edad")
+        age = parseInt (age)
+        let ageS = "Tienes " + age + " años"
+        console.log (ageS)
+
+        let dni
+        dni = prompt ("Escribe tu DNI")
+        let dniS = "Tu DNI es " + dni
+        console.log (dniS)
+
+        let height
+        height = prompt ("Escribe tu altura en centímetros")
+        height = parseInt (height)
+        let heightS = "Tu altura son " + height + " cms"
+        console.log (heightS)
+
+        if (nameS != null) {
+            document.getElementById("name").innerHTML = name
         }
 
-        if (name != null) {
-            document.getElementById("ageS").innerHTML = name
+        if (ageS != null) {
+            document.getElementById("age").innerHTML = name
         }
 
-        if (name != null) {
-            document.getElementById("dniS").innerHTML = name
+        if (dniS != null) {
+            document.getElementById("dni").innerHTML = name
         }
 
-        if (name != null) {
-            document.getElementById("heightS").innerHTML = name
+        if (heightS != null) {
+            document.getElementById("height").innerHTML = name
         }
     </script>
     
